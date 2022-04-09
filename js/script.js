@@ -6,7 +6,7 @@ let needsScreenReset = false;
 const upperDisplayDiv = document.querySelector(".upper-display")
 const lowerDisplayDiv = document.querySelector(".lower-display")
 
-window.addEventListener("onload", () => lowerDisplayDiv.textContent = "0");
+window.addEventListener("load", () => lowerDisplayDiv.textContent = "0");
 window.addEventListener("keydown", handleKeyInput);
 
 const digitBtns = document.querySelectorAll(".digit-btn").forEach(btn => btn.addEventListener("click", processNumber));
